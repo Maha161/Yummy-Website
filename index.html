@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logo.png"/>
+    <title>Yummy</title>
+     <!--^ Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!--^ Font Awosem -->
+     <link rel="stylesheet" href="./css/all.min.css">
+     <!--^ Main Stylesheet-->
+     <link rel="stylesheet" href="./css/style.css"> 
+
+</head>
+<body>
+    <!--^ loading  -->
+     <div class="loading">
+      <span class="loader fs-6 "></span>
+     </div>
+    <!--^ Navbar -->
+    <div class="side-menu min-vh-100 d-flex position-fixed z-3">
+      <div class="left-menu px-4 bg-black d-flex flex-column justify-content-between">
+        <ul class="list-items list-unstyled pt-4">
+          <li class="search-link position-relative"><a class="text-decoration-none text-white h6 d-inline-block py-2" href="#search">Search</a></li>
+          <li class="category-link position-relative"><a class="text-decoration-none text-white h6 d-inline-block py-2" href="#category">Categories</a></li>
+          <li class="area-link position-relative"><a class="text-decoration-none text-white h6 d-inline-block py-2" href="#area">Area</a></li>
+          <li class="ingredients-link position-relative"><a class="text-decoration-none text-white h6 d-inline-block py-2" href="#ingredients">Ingredients</a></li>
+          <li class="contact-link position-relative"><a class="text-decoration-none text-white h6 d-inline-block py-2" href="#contact">Contact Us</a></li>
+         </ul>
+        <div class="nav-footer mt-auto pb-4">
+          <div class="social-links">
+           <div class="icons">
+            <a href="#" class="me-1 text-decoration-none text-white"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="me-1 text-decoration-none text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="me-1 text-decoration-none text-white"><i class="fa-solid fa-globe"></i></a>
+           </div>
+          <p class="text-white">Copyright © 2019 All Rights <br> Reserved.</p>
+        </div>
+      </div>
+       </div>
+      <div class="right-menu bg-white p-2 py-4 d-flex flex-column justify-content-between align-items-center">
+        <img class="logo" alt="" src="./images/logo.png">
+        <i class="fa-solid fa-bars close-icon fs-3"></i>
+        <div class="d-flex justify-content-between flex-column align-items-center">
+          <a href="#" class="me-1 text-decoration-none text-black"><i class="fa-solid fa-globe"></i></a>
+          <a href="#" class="me-1 text-decoration-none text-black"><i class="fa-solid fa-share-nodes"></i></a>
+         </div>
+       </div>
+     </div>
+     <!--^ Website Content -->
+    <div class="main">
+      <!--^ Home Section -->
+     <section id="meals" class="meals pt-5 ">
+         <div class="container">
+           <div class="row meal-container"> 
+           </div>
+         </div>
+      </section>
+     <!--^ Meals Details Section-->
+     <section id="meals-details" class="meals-details pt-5 ">
+      <div class="container">
+        <div class="row meal-details-container">
+        </div>
+      </div>
+      </section>
+     <!--^ Search  -->
+     <section id="search" class="search">
+      <div class="container">
+      <div class="row search-container pt-4 d-none">
+        <div class="col-md-6 pt-3">
+         <input type="text" placeholder="Search By Name" class="search-by-name form form-control bg-transparent text-white">
+         </div>
+        <div class="col-md-6 pt-3">
+         <input type="text" placeholder="Search By First Letter" class="search-by-first-letter form form-control bg-transparent text-white" maxlength="1">
+         </div>
+        <div class="row search-data pt-5">  
+         </div>
+       </div>
+       </div>
+      </section>
+     <!--^ Category  -->
+     <section id="category" class="category">
+      <div class="container pt-5">
+        <div class="row category-data">
+        </div>
+      </div>
+      </section> 
+     <!--^ Area  -->
+     <section id="area" class="area">
+      <div class="container pt-5">
+        <div class="row area-data ">
+         </div>
+       </div>
+      </section>
+      <!--^ Ingredients  -->
+     <section id="ingredients" class="ingredients">
+      <div class="container pt-5">
+        <div class="row ingredients-data">    
+          </div>
+       </div>
+      </section>
+     <!--^ Contact  -->
+     <section id="contact" class="contact">
+      <div class="container pt-5 px-5 d-flex justify-content-center align-items-center min-vh-100">
+         <form class="row px-5 contact-container d-none">
+          <div class="col-md-6 py-3 ps-lg-5">
+            <input id="nameInput" type="text" class="form-control nameInput" placeholder="Enter Your Name">
+            <div class="nameAlert alert alert-danger w-100 my-2 d-none">Special characters and numbers not allowed </div>
+           </div>
+          <div class="col-md-6 py-3  pe-lg-5">
+           <input id="emailInput" type="email" class="form-control emailInput" placeholder="Enter Your Email">
+           <div  class="emailAlert alert alert-danger w-100 my-2 d-none">Email not valid *exemple@yyy.zzz </div>
+           </div>
+          <div class="col-md-6 py-3  ps-lg-5">
+           <input id="phoneInput" type="tel" class="form-control phoneInput" placeholder="Enter Your Phone">
+           <div  class="phoneAlert alert alert-danger w-100 my-2 d-none">Enter valid Phone Number </div>
+           </div>
+          <div class="col-md-6 py-3 pe-lg-5">
+          <input id="ageInput" type="number" class="form-control ageInput" placeholder="Enter Your Age">
+          <div  class="ageAlert alert alert-danger w-100 my-2 d-none">Enter valid age </div>
+           </div>  
+          <div class="col-md-6 py-3 ps-lg-5">
+           <input id="passInput" type="password" class="form-control passInput" placeholder="Enter Your Passward">
+           <div  class="passAlert alert alert-danger w-100 my-2 d-none">Enter valid password *Minimum eight characters, at least one letter and one number:* </div>
+           </div>  
+          <div class="col-md-6 py-3 pe-lg-5">
+           <input id="repassInput" type="password" class="form-control repassInput" placeholder="Repassward">
+           <div  class="repassAlert alert alert-danger w-100 my-2 d-none">Enter valid repassword </div>
+           </div>
+          <div class="col-md-12">
+          <button id="submitBtn" class="submitBtn btn btn-outline-danger d-block mx-auto mt-3 disabled"  >Submit</button>
+           </div>
+          </form>
+       </div>
+      </section>  
+     </div>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
+
